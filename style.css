@@ -1,0 +1,7 @@
+/* Import Garamond font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+
+/* Apply Garamond font to the entire page */
+body {
+  font-family: 'EB Garamond', serif;
+}

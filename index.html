@@ -1,0 +1,85 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+            .bg-food {
+            background-image: url("https://ak.picdn.net/shutterstock/videos/1100715003/thumb/7.jpg"); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+        }
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        .fixed-hero {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+        }
+    
+        .fixed-footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow  sticky-header">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-gray-800">Indian Flavors Cuisine</a>
+            <div class="flex space-x-4">
+                <a href="index.html" class="text-gray-800 hover:text-gray-600">Home</a>
+                <a href="menu.html" class="text-gray-800 hover:text-gray-600">Menu</a>
+                <a href="about.html" class="text-gray-800 hover:text-gray-600">About</a>
+                <a href="contact.html" class="text-gray-800 hover:text-gray-600">Contact</a>
+                <a href="cart.html" class="text-gray-800 hover:text-gray-600 relative">
+                    <i class="fas fa-shopping-cart text-lg"></i>
+                    <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">3</span>
+                </a>
+                <a href="signin.html" class="text-gray-800 hover:text-gray-600">Sign In</a>
+                <a href="signup.html" class="text-gray-800 hover:text-gray-600">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page Hero Section with Fixed Background Image -->
+    <div class="fixed-hero bg-food flex items-center justify-center text-center">
+        <div class="bg-white bg-opacity-75 p-10 rounded-lg shadow-lg">
+            <h1 class="text-4xl font-bold text-gray-800">Welcome to Indian Flavors Cuisine</h1>
+            <p class="mt-4 text-gray-600">Experience the rich and diverse flavors of India in a warm and welcoming atmosphere.</p>
+            <a href="menu.html" class="mt-6 inline-block bg-gray-800 text-white px-6 py-2 rounded-full hover:bg-gray-700 transition cursor-pointer">Explore Menu</a>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-white shadow fixed-footer">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-gray-800">&copy; 2024 Indian Flavors Cuisine. All Rights Reserved.</span>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-800 hover:text-gray-600">Privacy Policy</a>
+                <a href="#" class="text-gray-800 hover:text-gray-600">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
